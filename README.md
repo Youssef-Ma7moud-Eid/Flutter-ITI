@@ -1,16 +1,19 @@
-# iti_flutter
+📱 Login & Sign Up Screens (Flutter)
+These screens are created using Flutter, featuring a clean layout built with Row, Column, Container, and TextField widgets. The design includes intuitive icons and smooth navigation for a better user experience.
 
-A new Flutter project.
+<table> <tr> <td align="center"><strong>🔐 Login Screen</strong><br> <img src="https://github.com/user-attachments/assets/faaf7a09-3bf8-45f4-8e4b-106209b423c1" width="250"/> </td> <td align="center"><strong>📝 Sign Up Screen</strong><br> <img src="https://github.com/user-attachments/assets/34f76d28-da3b-4600-bae5-1656acb70766" width="250"/> </td> </tr> </table>
+✅ Features
+📐 Structured Layout
+Uses Row and Column widgets to arrange UI elements in a clean and responsive way.
 
-## Getting Started
+🔲 Custom Containers
+Container widgets wrap each TextField and button to apply padding, margin, border radius, and background color.
 
-This project is a starting point for a Flutter application.
+⌨️ Input Fields
+TextField widgets for user inputs such as email, password, and username.
 
-A few resources to get you started if this is your first Flutter project:
+🎨 Icon Integration
+Flutter Icons like Icons.email, Icons.lock, and Icons.person are embedded in inputs via prefixIcon.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+➡️ Smooth Navigation
+Screen transitions handled with Navigator.push() and Navigator.pop().
