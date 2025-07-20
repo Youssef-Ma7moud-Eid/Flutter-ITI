@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:iti_flutter/views/sign_up_view.dart';
+import 'package:iti_flutter/views/splash_view.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -13,6 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SignUpView());
+      home:SplashView(),
+    );
   }
 }

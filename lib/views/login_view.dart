@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:iti_flutter/views/sign_up_view.dart';
+import 'package:iti_flutter/views/otp_view.dart';
 import 'package:iti_flutter/widgets/button_widget.dart';
 import 'package:iti_flutter/widgets/text_form_field.dart';
 
@@ -80,8 +80,8 @@ class LoginView extends StatelessWidget {
                     ),
                     TextButton(
                       onPressed: () {
-                        Navigator.of(context).pushReplacement(
-                          MaterialPageRoute(builder: (context) => SignUpView()),
+                        Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context) => OtpView()),
                         );
                       },
                       child: Text(
