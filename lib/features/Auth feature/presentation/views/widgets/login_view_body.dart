@@ -77,7 +77,7 @@ class _LoginViewBodyState extends State<LoginViewBody> {
                         title: 'Success!',
                         text: 'You have signed up successfully.',
                         type: QuickAlertType.success,
-                        confirmBtnText: 'Go to Login',
+                        confirmBtnText: 'Ok',
                         onConfirm: () {
                           Navigator.of(context).pushReplacement(
                             MaterialPageRoute(builder: (context) => OtpView()),
