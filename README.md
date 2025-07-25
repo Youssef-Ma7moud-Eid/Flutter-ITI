@@ -88,7 +88,10 @@ lib/
 │   └── Home feature/
 │       ├── data/             # Home data, models, APIs
 │       └── presentation/
-│           └── views/        # Home UI & widgets
+│           └── views/
+|                    ├── home_view.dart
+|                    ├── setting_view.dart
+|                    ├── widgets/    # Home-related UI components   
 │
 ├── app.dart                  # Main app widget (routing, theme, etc.)
 └── main.dart                 # App entry point
