@@ -1,80 +1,98 @@
-📱 Auth Screens (Flutter)
-These screens are created using Flutter, featuring a clean layout built with Row, Column, Container, and TextField widgets. The design includes intuitive icons and smooth navigation for a better user experience.
+🔐 Flutter E-commerce App – Modern UI & Full Flow 🚀
+Welcome to the Flutter E-commerce App, a beautifully designed and fully functional app made with ❤️ using Flutter. From splash to login to navigating products, it delivers a complete user experience with validation, modern UI, and smooth transitions.
 
-<table> <tr> <td align="center"><strong>🧭 Splash Screen</strong><br> <img src="https://github.com/user-attachments/assets/ddb07c0f-e614-4010-9bf3-9ab03afd8aad" width="250"/> </td> <td align="center"><strong>🚀 On boarding Screen</strong><br> <img src="https://github.com/user-attachments/assets/8ff2ea37-0a61-41d4-b5f1-0605187ecd11" width="250"/> </td> </tr> </table>
+---
 
-<table> <tr> <td align="center"><strong>🔐 Login Screen</strong><br> <img src="https://github.com/user-attachments/assets/faaf7a09-3bf8-45f4-8e4b-106209b423c1" width="250"/> </td> <td align="center"><strong>📝 Sign Up Screen</strong><br> <img src="https://github.com/user-attachments/assets/34f76d28-da3b-4600-bae5-1656acb70766" width="250"/> </td> </tr> </table>
+## ✨ Features at a Glance
+
+✅ **Splash + Onboarding Screens**  
+✅ **Sign Up / Login / OTP Verification**  
+✅ **Input Validations with Regex**  
+✅ **Password Confirmation Checks**  
+✅ **Persistent Bottom Navigation Bar**  
+✅ **Home Page with Meal Products**  
+✅ **Settings Page with Theme Switch**  
+✅ **Polished UX & Beautiful UI**
+
+---
+
+## 📸 Screens Overview
 
 <table> 
   <tr> 
-    <td align="center">
-      <strong>🔢 OTP Screen</strong><br> 
-      <img src="https://github.com/user-attachments/assets/17fd9084-2e42-4107-9557-2ed1ce54b909" width="250"/> 
-    </td> 
-  </tr> 
+    <td align="center"><strong>🧭 Splash</strong><br><img src="https://github.com/user-attachments/assets/ddb07c0f-e614-4010-9bf3-9ab03afd8aad" width="250"/></td> 
+    <td align="center"><strong>🚀 Onboarding</strong><br><img src="https://github.com/user-attachments/assets/8ff2ea37-0a61-41d4-b5f1-0605187ecd11" width="250"/></td> 
+  </tr>
 </table>
 
-🧭 Screen Order
+<table> 
+  <tr> 
+    <td align="center"><strong>🔐 Login</strong><br><img src="https://github.com/user-attachments/assets/faaf7a09-3bf8-45f4-8e4b-106209b423c1" width="250"/></td> 
+    <td align="center"><strong>📝 Sign Up</strong><br><img src="https://github.com/user-attachments/assets/34f76d28-da3b-4600-bae5-1656acb70766" width="250"/></td> 
+  </tr>
+</table>
 
-🔆 Splash Screen
+<table> 
+  <tr> 
+    <td align="center"><strong>🔢 OTP Verification</strong><br><img src="https://github.com/user-attachments/assets/17fd9084-2e42-4107-9557-2ed1ce54b909" width="250"/></td>
+    <td align="center"><strong>⚠️ Invalid Email</strong><br><img src="https://github.com/user-attachments/assets/83e42681-b14e-42a8-9866-52d9c50964ca" width="250"/></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>❗ Passwords Don't Match</strong><br><img src="https://github.com/user-attachments/assets/d0ef9866-72f1-4097-b053-1c7723884086" width="250"/></td>
+    <td align="center"><strong>✅ Success Login</strong><br><img src="https://github.com/user-attachments/assets/ceeab5e6-ac66-4b01-8141-037abf3d62b3" width="250"/></td>
+  </tr>
+</table>
 
-First screen shown on app launch.
+<table>
+  <tr>
+    <td align="center"><strong>🏠 Home Page</strong><br><img src="https://github.com/user-attachments/assets/f5dc3f42-4907-45e7-8146-7c53d9fbf5a4" width="250"/></td>
+    <td align="center"><strong>⚙️ Settings Page</strong><br><img src="https://github.com/user-attachments/assets/ae782157-967a-4f95-8d66-41b9427f1c68" width="250"/></td>
+  </tr>
+</table>
 
-Displays app logo or branding for a few seconds.
+---
 
+## 💻 Tech Highlights
 
+- 🔤 **Regex Validation for Email Format**
+  ```dart
+  RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$') // Simple but effective!
+🔁 Password Match Check
 
-🚀 Onboarding Screen
+🎛 Theme Toggle Switch in Settings
 
-Introduces key features of the app.
+🧭 Stateful Bottom Navigation with tab persistence
 
-Swipe or tap through onboarding walkthroughs.
+🔐 Navigator.push / pushReplacement based routing
 
+🧩 Built using modular Flutter widgets
+ ## 📂 Project Structure
+ ```css
+lib/
+├── core/
+│   ├── utils/                # Common utilities (validators, constants)
+│   └── widgets/              # Reusable global widgets
+│
+├── features/
+│   ├── Auth feature/
+│   │   ├── data/             # Auth APIs, models, data sources
+│   │   └── presentation/
+│   │       ├── manager/      # BLoC / Cubit / State Management
+│   │       └── views/
+│   │           ├── widgets/  # Auth-related UI components
+│   │           ├── login_view.dart
+│   │           ├── otp_view.dart
+│   │           ├── sign_up_view.dart
+│   │           └── splash_view.dart
+│   │
+│   └── Home feature/
+│       ├── data/             # Home data, models, APIs
+│       └── presentation/
+│           └── views/
+|                    ├── home_view.dart
+|                    ├── setting_view.dart
+|                    ├── widgets/    # Home-related UI components   
+│
+├── app.dart                  # Main app widget (routing, theme, etc.)
+└── main.dart                 # App entry point
 
-
-📝 Sign Up Screen
-
-Collects email, username, and password from new users.
-
-Stylized input fields with icons and containers.
-
-🔐 Login Screen
-
-Allows users to log in with email and password.
-
-Navigation to OTP screen or sign-up.
-
-🔢 OTP Verification Screen
-
-User enters the one-time password sent to them.
-
-Built using the flutter_otp_text_field package.
-
-
-
-✅ Features
-
-📐 Structured Layout
-
-Uses Row and Column widgets for clean and responsive layout.
-
-🔲 Custom Containers
-
-Containers wrap inputs and buttons for styling, padding, and spacing.
-
-⌨️ Input Fields
-
-TextField widgets for user input (email, password, OTP).
-
-🎨 Icon Integration
-
-Icons like Icons.email, Icons.lock, and Icons.person used with prefixIcon.
-
-🔁 Smooth Navigation
-
-Navigation handled with Navigator.push() and Navigator.pop() for screen transitions.
-
-📦 Packages Used
-
-flutter_otp_text_field:
-Used for OTP input UI with stylized digit fields and onCompleted callback.
