@@ -55,7 +55,7 @@ class SplashViewBody extends StatelessWidget {
               children: [
                 const Spacer(),
                 const SizedBox(height: 260),
-                Image.asset('assets/logo.jpg', height: 300),
+                Image.asset('assets/images/logo.jpg', height: 300),
                 const SizedBox(height: 50),
                 const Text(
                   'دَعْمٌ وتمكينٌ لمستقبلٍ أفضل لفئاتنا الخاصة',

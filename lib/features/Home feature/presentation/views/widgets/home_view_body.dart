@@ -17,19 +17,18 @@ class HomeViewBody extends StatelessWidget {
   }
 }
 
-
 List<Map<String, String>> meals = [
-  {'image': 'assets/meal1.jpg', 'name': 'Grilled Chicken'},
-  {'image': 'assets/meal2.jpg', 'name': 'Pasta Carbonara'},
-  {'image': 'assets/meal3.png', 'name': 'Avocado Toast'},
-  {'image': 'assets/meal4.jpg', 'name': 'Beef Burger'},
-  {'image': 'assets/meal5.jpg', 'name': 'Sushi Combo'},
-  {'image': 'assets/meal6.jpg', 'name': 'Vegan Bowl'},
-  {'image': 'assets/meal7.jpg', 'name': 'Shawarma Wrap'},
-  {'image': 'assets/meal8.jpg', 'name': 'Seafood Pasta'},
-  {'image': 'assets/meal9.jpg', 'name': 'Fried Rice'},
-  {'image': 'assets/meal10.jpg', 'name': 'Cheese Pizza'},
-  {'image': 'assets/meal11.jpg', 'name': 'Chicken Curry'},
-  {'image': 'assets/meal12.jpg', 'name': 'Salmon Plate'},
-  {'image': 'assets/meal13.jpg', 'name': 'Chocolate Cake'},
+  {'image': 'assets/images/meal1.jpg', 'name': 'Grilled Chicken'},
+  {'image': 'assets/images/meal2.jpg', 'name': 'Pasta Carbonara'},
+  {'image': 'assets/images/meal3.png', 'name': 'Avocado Toast'},
+  {'image': 'assets/images/meal4.jpg', 'name': 'Beef Burger'},
+  {'image': 'assets/images/meal5.jpg', 'name': 'Sushi Combo'},
+  {'image': 'assets/images/meal6.jpg', 'name': 'Vegan Bowl'},
+  {'image': 'assets/images/meal7.jpg', 'name': 'Shawarma Wrap'},
+  {'image': 'assets/images/meal8.jpg', 'name': 'Seafood Pasta'},
+  {'image': 'assets/images/meal9.jpg', 'name': 'Fried Rice'},
+  {'image': 'assets/images/meal10.jpg', 'name': 'Cheese Pizza'},
+  {'image': 'assets/images/meal11.jpg', 'name': 'Chicken Curry'},
+  {'image': 'assets/images/meal12.jpg', 'name': 'Salmon Plate'},
+  {'image': 'assets/images/meal13.jpg', 'name': 'Chocolate Cake'},
 ];

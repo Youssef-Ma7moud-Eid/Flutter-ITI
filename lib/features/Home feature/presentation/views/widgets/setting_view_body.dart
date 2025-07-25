@@ -34,7 +34,7 @@ class _SettingViewBodyState extends State<SettingViewBody> {
             child: Column(
               children: [
                 Image.asset(
-                  'assets/my_image.jpg',
+                  'assets/images/my_image.jpg',
                   width: 400,
                   height: 350,
                   fit: BoxFit.cover,
