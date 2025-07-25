@@ -66,8 +66,7 @@ Welcome to the Flutter E-commerce App, a beautifully designed and fully function
 🔐 Navigator.push / pushReplacement based routing
 
 🧩 Built using modular Flutter widgets
-
-🧱 Project Structure
+'''📂 Project Structure
 lib/
 ├── core/
 │   ├── utils/                # Common utilities (validators, constants)
@@ -86,9 +85,10 @@ lib/
 │   │           └── splash_view.dart
 │   │
 │   └── Home feature/
-│       ├── data/
+│       ├── data/             # Home data, models, APIs
 │       └── presentation/
 │           └── views/        # Home UI & widgets
 │
 ├── app.dart                  # Main app widget (routing, theme, etc.)
 └── main.dart                 # App entry point
+
