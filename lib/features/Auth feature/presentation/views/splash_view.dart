@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:iti_flutter/widgets/splash_view_body.dart';
+import 'package:iti_flutter/features/Auth%20feature/presentation/views/widgets/splash_view_body.dart';
 
 class SplashView extends StatelessWidget {
   const SplashView({super.key});

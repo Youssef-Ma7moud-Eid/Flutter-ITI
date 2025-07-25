@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:iti_flutter/views/sign_up_view.dart';
+import 'package:iti_flutter/features/Auth%20feature/presentation/views/sign_up_view.dart';
 
 class SplashViewBody extends StatelessWidget {
   const SplashViewBody({super.key});
@@ -55,7 +55,7 @@ class SplashViewBody extends StatelessWidget {
               children: [
                 const Spacer(),
                 const SizedBox(height: 260),
-                Image.asset('lib/assets/logo.jpg', height: 300),
+                Image.asset('assets/logo.jpg', height: 300),
                 const SizedBox(height: 50),
                 const Text(
                   'دَعْمٌ وتمكينٌ لمستقبلٍ أفضل لفئاتنا الخاصة',

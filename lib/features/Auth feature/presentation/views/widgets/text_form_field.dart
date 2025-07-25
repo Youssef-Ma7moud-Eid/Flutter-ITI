@@ -6,11 +6,14 @@ class TextFieldForm extends StatefulWidget {
     this.icon,
     required this.text,
     required this.observertext,
+    this.validator,
+    this.onChanged,
   });
   final IconData? icon;
   final String text;
   final bool observertext;
-
+  final String? Function(String?)? validator;
+  final void Function(String)? onChanged;
   @override
   State<TextFieldForm> createState() => _TextFieldFormState();
 }
@@ -20,7 +23,9 @@ class _TextFieldFormState extends State<TextFieldForm> {
   IconData? iconeye = Icons.visibility;
   @override
   Widget build(BuildContext context) {
-    return TextField(
+    return TextFormField(
+      onChanged: widget.onChanged,
+      validator: widget.validator,
       obscureText: observertext,
       decoration: InputDecoration(
         filled: true, // Enable background fill
