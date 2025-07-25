@@ -1,6 +1,5 @@
-# 🔐 Flutter E-commerce App – Modern UI & Full Flow 🚀
-
-Welcome to the **Flutter Auth App**, a beautifully designed and fully functional authentication flow made with ❤️ using Flutter. From splash to success, it delivers a complete user experience with validation, clean UI, and smooth navigation!
+🔐 Flutter E-commerce App – Modern UI & Full Flow 🚀
+Welcome to the Flutter E-commerce App, a beautifully designed and fully functional app made with ❤️ using Flutter. From splash to login to navigating products, it delivers a complete user experience with validation, modern UI, and smooth transitions.
 
 ---
 
