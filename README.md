@@ -1,80 +1,44 @@
 📱 Auth Screens (Flutter)
-These screens are created using Flutter, featuring a clean layout built with Row, Column, Container, and TextField widgets. The design includes intuitive icons and smooth navigation for a better user experience.
+These screens are built using Flutter, combining a clean layout (Row, Column, Container, TextField) and smooth navigation for a seamless user experience.
 
-<table> <tr> <td align="center"><strong>🧭 Splash Screen</strong><br> <img src="https://github.com/user-attachments/assets/ddb07c0f-e614-4010-9bf3-9ab03afd8aad" width="250"/> </td> <td align="center"><strong>🚀 On boarding Screen</strong><br> <img src="https://github.com/user-attachments/assets/8ff2ea37-0a61-41d4-b5f1-0605187ecd11" width="250"/> </td> </tr> </table>
-
-<table> <tr> <td align="center"><strong>🔐 Login Screen</strong><br> <img src="https://github.com/user-attachments/assets/faaf7a09-3bf8-45f4-8e4b-106209b423c1" width="250"/> </td> <td align="center"><strong>📝 Sign Up Screen</strong><br> <img src="https://github.com/user-attachments/assets/34f76d28-da3b-4600-bae5-1656acb70766" width="250"/> </td> </tr> </table>
-
-<table> 
-  <tr> 
-    <td align="center">
-      <strong>🔢 OTP Screen</strong><br> 
-      <img src="https://github.com/user-attachments/assets/17fd9084-2e42-4107-9557-2ed1ce54b909" width="250"/> 
-    </td> 
-  </tr> 
-</table>
-
+📸 Screens Overview
+<table> <tr> <td align="center"><strong>🧭 Splash Screen</strong><br> <img src="https://github.com/user-attachments/assets/ddb07c0f-e614-4010-9bf3-9ab03afd8aad" width="250"/> </td> <td align="center"><strong>🚀 Onboarding Screen</strong><br> <img src="https://github.com/user-attachments/assets/8ff2ea37-0a61-41d4-b5f1-0605187ecd11" width="250"/> </td> </tr> </table> <table> <tr> <td align="center"><strong>🔐 Login Screen</strong><br> <img src="https://github.com/user-attachments/assets/faaf7a09-3bf8-45f4-8e4b-106209b423c1" width="250"/> </td> <td align="center"><strong>📝 Sign Up Screen</strong><br> <img src="https://github.com/user-attachments/assets/34f76d28-da3b-4600-bae5-1656acb70766" width="250"/> </td> </tr> </table> <table> <tr> <td align="center"><strong>🔢 OTP Screen</strong><br> <img src="https://github.com/user-attachments/assets/17fd9084-2e42-4107-9557-2ed1ce54b909" width="250"/> </td> <td align="center"><strong>⚠️ Invalid Email Format</strong><br> <img src="https://github.com/user-attachments/assets/83e42681-b14e-42a8-9866-52d9c50964ca" width="250"/> </td> </tr> <tr> <td align="center"><strong>🔐 Passwords Don't Match</strong><br> <img src="https://github.com/user-attachments/assets/d0ef9866-72f1-4097-b053-1c7723884086" width="250"/> </td> <td align="center"><strong>✅ Valid Credentials</strong><br> <img src="https://github.com/user-attachments/assets/ceeab5e6-ac66-4b01-8141-037abf3d62b3" width="250"/> </td> </tr> </table> <table> <tr> <td align="center"><strong>🍽️ Home (Meal Products)</strong><br> <img src="https://github.com/user-attachments/assets/f5dc3f42-4907-45e7-8146-7c53d9fbf5a4" width="250"/> </td> <td align="center"><strong>⚙️ Settings Page</strong><br> <img src="https://github.com/user-attachments/assets/ae782157-967a-4f95-8d66-41b9427f1c68" width="250"/> </td> </tr> </table>
 🧭 Screen Order
+🔆 Splash Screen – App entry with branding.
 
-🔆 Splash Screen
+🚀 Onboarding – App intro & walkthrough.
 
-First screen shown on app launch.
+📝 Sign Up – Email, name, password fields with validations.
 
-Displays app logo or branding for a few seconds.
+🔐 Login – Simple login with navigation to OTP or sign-up.
 
+🔢 OTP Verification – 4-6 digit code input using flutter_otp_text_field.
 
+⚠️ Validation Feedback:
 
-🚀 Onboarding Screen
+❌ Invalid email format
 
-Introduces key features of the app.
+❌ Short password
 
-Swipe or tap through onboarding walkthroughs.
+❌ Mismatched passwords
 
+✅ Success State – Login confirmation with visual feedback.
 
+🍽️ Home – Meal product listing.
 
-📝 Sign Up Screen
+⚙️ Settings – Profile image, name, track, and theme toggle.
 
-Collects email, username, and password from new users.
-
-Stylized input fields with icons and containers.
-
-🔐 Login Screen
-
-Allows users to log in with email and password.
-
-Navigation to OTP screen or sign-up.
-
-🔢 OTP Verification Screen
-
-User enters the one-time password sent to them.
-
-Built using the flutter_otp_text_field package.
-
-
+📍 Bottom Nav – Persistent using persistent_bottom_nav_bar.
 
 ✅ Features
+Clean Layout: Row, Column, Expanded usage.
 
-📐 Structured Layout
+Validation Logic: Real-time feedback on forms.
 
-Uses Row and Column widgets for clean and responsive layout.
+Icons & Styling: Integrated icons (Icons.email, Icons.lock, etc.) and stylish Containers.
 
-🔲 Custom Containers
+Navigation Flow: Smooth Navigator.push/pop between screens.
 
-Containers wrap inputs and buttons for styling, padding, and spacing.
+Stateful Navigation: Maintained across bottom navigation tabs.
 
-⌨️ Input Fields
-
-TextField widgets for user input (email, password, OTP).
-
-🎨 Icon Integration
-
-Icons like Icons.email, Icons.lock, and Icons.person used with prefixIcon.
-
-🔁 Smooth Navigation
-
-Navigation handled with Navigator.push() and Navigator.pop() for screen transitions.
-
-📦 Packages Used
-
-flutter_otp_text_field:
-Used for OTP input UI with stylized digit fields and onCompleted callback.
+Reusability: Screens structured into widgets for reuse and clarity.
