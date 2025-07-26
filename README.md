@@ -1,4 +1,5 @@
-🔐 Flutter E-commerce App – Modern UI & Full Flow 🚀
+# 🔐 Flutter E-commerce App – Modern UI & Full Flow 🚀
+
 Welcome to the Flutter E-commerce App, a beautifully designed and fully functional app made with ❤️ using Flutter. From splash to login to navigating products, it delivers a complete user experience with validation, modern UI, and smooth transitions.
 
 ---
@@ -15,9 +16,12 @@ Welcome to the Flutter E-commerce App, a beautifully designed and fully function
 ✅ **Polished UX & Beautiful UI**
 
 ---
-### 🎬 Demo Video
 
-[https://github.com/user-attachments/assets/171e1d36-e1f7-4005-82d4-db764c40ed5c](https://github.com/user-attachments/assets/395b84b7-6800-4749-9a17-76e6077917f7)
+## 🎬 Demo Video
+
+[![Watch Demo](https://img.shields.io/badge/Watch-Demo-red?logo=youtube&style=for-the-badge)](https://github.com/user-attachments/assets/395b84b7-6800-4749-9a17-76e6077917f7)
+
+---
 
 ## 📸 Screens Overview
 
@@ -52,7 +56,7 @@ Welcome to the Flutter E-commerce App, a beautifully designed and fully function
     <td align="center"><strong>⚙️ Settings Page</strong><br><img src="https://github.com/user-attachments/assets/ae782157-967a-4f95-8d66-41b9427f1c68" width="250"/></td>
   </tr>
    <tr>
-    <td align="center"><strong>🏠 Second Home Page</strong><br><img  src="https://github.com/user-attachments/assets/679b24fe-c42f-470e-ae3c-c9d970b727e0"  width="250"/></td>
+    <td align="center"><strong>🛍️ Shopping Page</strong><br><img  src="https://github.com/user-attachments/assets/679b24fe-c42f-470e-ae3c-c9d970b727e0"  width="250"/></td>
   </tr>
 </table>
 
@@ -62,16 +66,20 @@ Welcome to the Flutter E-commerce App, a beautifully designed and fully function
 
 - 🔤 **Regex Validation for Email Format**
   ```dart
-  RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$') // Simple but effective!
-🔁 Password Match Check
+  RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$')
+❗ Password Match Check
 
-🎛 Theme Toggle Switch in Settings
+🎛 Theme Toggle Switch (Dark/Light) using Cubit
 
-🧭 Stateful Bottom Navigation with tab persistence
+📦 Local Storage using SharedPreferences
 
-🔐 Navigator.push / pushReplacement based routing
+🧭 Persistent Bottom Navigation Bar
 
-🧩 Built using modular Flutter widgets
+🧱 Modular Flutter Widgets
+
+🔁 Smooth Transitions using animate_do package
+
+🔐 Routing with Navigator.push & pushReplacement
  ## 📂 Project Structure
  ```css
 lib/
