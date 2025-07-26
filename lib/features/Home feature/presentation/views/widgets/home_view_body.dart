@@ -1,3 +1,4 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:iti_flutter/features/Home%20feature/presentation/views/widgets/card_item.dart';
 
@@ -10,7 +11,11 @@ class HomeViewBody extends StatelessWidget {
       child: ListView.builder(
         itemCount: meals.length,
         itemBuilder: (context, index) {
-          return CardItem(index: index);
+          return FadeInRight(
+            duration: const Duration(milliseconds: 900),
+            delay: Duration(milliseconds: index * 190),
+            child: CardItem(index: index),
+          );
         },
       ),
     );

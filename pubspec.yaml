@@ -28,15 +28,18 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  animate_do: ^4.2.0
   cupertino_icons: ^1.0.8
   flutter:
     sdk: flutter
+  flutter_bloc: ^9.1.1
   flutter_native_splash: ^2.4.6
   flutter_otp_text_field: ^1.5.1+1
   font_awesome_flutter: ^10.8.0
   google_fonts: ^6.2.1
   persistent_bottom_nav_bar: ^6.2.1
   quickalert: ^1.1.0
+  shared_preferences: ^2.5.3
 
 dev_dependencies:
   flutter_lints: ^5.0.0
