@@ -15,6 +15,9 @@ Welcome to the Flutter E-commerce App, a beautifully designed and fully function
 ✅ **Polished UX & Beautiful UI**
 
 ---
+### 🎬 Demo Video
+
+[https://github.com/user-attachments/assets/171e1d36-e1f7-4005-82d4-db764c40ed5c](https://github.com/user-attachments/assets/395b84b7-6800-4749-9a17-76e6077917f7)
 
 ## 📸 Screens Overview
 
@@ -47,6 +50,9 @@ Welcome to the Flutter E-commerce App, a beautifully designed and fully function
   <tr>
     <td align="center"><strong>🏠 Home Page</strong><br><img src="https://github.com/user-attachments/assets/f5dc3f42-4907-45e7-8146-7c53d9fbf5a4" width="250"/></td>
     <td align="center"><strong>⚙️ Settings Page</strong><br><img src="https://github.com/user-attachments/assets/ae782157-967a-4f95-8d66-41b9427f1c68" width="250"/></td>
+  </tr>
+   <tr>
+    <td align="center"><strong>🏠 Second Home Page</strong><br><img  src="https://github.com/user-attachments/assets/679b24fe-c42f-470e-ae3c-c9d970b727e0"  width="250"/></td>
   </tr>
 </table>
 
