@@ -8,12 +8,14 @@ class TextFieldForm extends StatefulWidget {
     required this.observertext,
     this.validator,
     this.onChanged,
+    this.controller,
   });
   final IconData? icon;
   final String text;
   final bool observertext;
   final String? Function(String?)? validator;
   final void Function(String)? onChanged;
+  final TextEditingController? controller;
   @override
   State<TextFieldForm> createState() => _TextFieldFormState();
 }
@@ -24,6 +26,7 @@ class _TextFieldFormState extends State<TextFieldForm> {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      controller: widget.controller,
       onChanged: widget.onChanged,
       validator: widget.validator,
       obscureText: observertext,

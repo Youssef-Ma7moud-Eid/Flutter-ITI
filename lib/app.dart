@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:iti_flutter/core/theme/dark_mode.dart';
 import 'package:iti_flutter/core/theme/light_mode.dart';
+import 'package:iti_flutter/features/Auth%20feature/data/repo/repo_implement.dart';
+import 'package:iti_flutter/features/Auth%20feature/presentation/manager/auth_cubit.dart';
 import 'package:iti_flutter/features/Auth%20feature/presentation/views/splash_view.dart';
 import 'package:iti_flutter/features/Home%20feature/presentation/manager/app_cubit.dart';
 import 'package:iti_flutter/features/Home%20feature/presentation/manager/app_state.dart';
@@ -11,8 +13,13 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (context) => AppCubit(),
+    return MultiBlocProvider(
+      providers: [
+       BlocProvider(
+      create: (context) => AppCubit(),),
+      BlocProvider(
+      create: (context) => AuthCubit(AuthRepoImplement()),),
+      ],
       child: BlocBuilder<AppCubit, AppState>(
         builder: (context, state) {
           return MaterialApp(
