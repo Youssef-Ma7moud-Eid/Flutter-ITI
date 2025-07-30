@@ -153,6 +153,7 @@ class _SettingViewBodyState extends State<SettingViewBody> {
               child: ListTile(
                 onTap: () async {
                   await CacheHelper().removeData(key: 'NewUser');
+                   await AuthCubit.get(context).logout();
                   Navigator.of(context).pushReplacement(
                     MaterialPageRoute(builder: (context) => SignUpView()),
                   );

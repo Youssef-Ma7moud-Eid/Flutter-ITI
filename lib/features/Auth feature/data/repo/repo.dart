@@ -7,5 +7,6 @@ class AuthRepo {
     required String email,
     required String password,
   }) async {}
-  Future deleteUser() async {}
+  Future <void> deleteUser() async {}
+   Future<void> logout() async {}
 }

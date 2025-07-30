@@ -111,4 +111,9 @@ class AuthRepoImplement implements AuthRepo {
   bool isLoggedIn() {
     return FirebaseAuth.instance.currentUser != null;
   }
+
+  @override
+  Future<void> logout() async {
+    await FirebaseAuth.instance.signOut();
+  }
 }
