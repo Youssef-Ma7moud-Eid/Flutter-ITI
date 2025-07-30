@@ -40,16 +40,7 @@ class AuthCubit extends Cubit<AuthState> {
     }
   }
 
-  Future<void> deleteccount() async {
-    emit(DeleteAccountLoadingState());
-    dynamic check = await authRepo.deleteUser();
-    if (check == true) {
-      await CacheHelper().removeData(key: 'NewUser');
-      emit(DeleteAccountSuccessState());
-    } else {
-      emit(DeleteAccountFauilreState(message: 'Error in delete  Account'));
-    }
-  }
+ 
 
   Future<void> logout() async {
     emit(LogoutLoadingState());

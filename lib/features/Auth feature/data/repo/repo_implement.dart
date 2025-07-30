@@ -2,23 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:iti_flutter/features/Auth%20feature/data/repo/repo.dart';
 
 class AuthRepoImplement implements AuthRepo {
-  @override
-  Future<bool> deleteUser() async {
-    try {
-      final user = FirebaseAuth.instance.currentUser;
-
-      if (user != null) {
-        await user.delete();
-        print('Account deleted successfully');
-      } else {
-        print('No user is currently signed in.');
-      }
-      return user!.delete() == true;
-    } catch (e) {
-      print('Error deleting account: $e');
-      return false;
-    }
-  }
+ 
 
   @override
   Future<dynamic> createUserWithEmailAndPassword({

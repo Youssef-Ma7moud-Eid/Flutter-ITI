@@ -37,8 +37,8 @@ class _SettingViewBodyState extends State<SettingViewBody> {
   Widget build(BuildContext context) {
     return BlocConsumer<AuthCubit, AuthState>(
       listener: (context, state) {
-        if (state is LogoutSuccessState ) {
-           AwesomeDialog(
+        if (state is LogoutSuccessState) {
+          AwesomeDialog(
             context: context,
             dialogType: DialogType.success,
             animType: AnimType.rightSlide,
@@ -46,33 +46,13 @@ class _SettingViewBodyState extends State<SettingViewBody> {
             desc: 'Go to SignIn again',
 
             btnOkOnPress: () {
-              Navigator.of(context).pushReplacement(
-                MaterialPageRoute(builder: (context) => SignUpView()),
+              Navigator.of(context, rootNavigator: true).pushAndRemoveUntil(
+                MaterialPageRoute(builder: (context) => const SignUpView()),
+                (route) => false,
               );
             },
           ).show();
-        }  else if (state is DeleteAccountSuccessState ) {
-           AwesomeDialog(
-            context: context,
-            dialogType: DialogType.success,
-            animType: AnimType.rightSlide,
-            title: 'Delete account Success',
-            desc: 'Go to Create one',
-
-            btnOkOnPress: () {
-              Navigator.of(context).pushReplacement(
-                MaterialPageRoute(builder: (context) => SignUpView()),
-              );
-            },
-          ).show();
-        } 
-        else if (state is LogoutFauilreState) {
-          scaffoldmessenger(
-            color: Colors.red,
-            text: state.message,
-            context: context,
-          );
-        } else if (state is DeleteAccountFauilreState) {
+        } else if (state is LogoutFauilreState) {
           scaffoldmessenger(
             color: Colors.red,
             text: state.message,
@@ -81,7 +61,7 @@ class _SettingViewBodyState extends State<SettingViewBody> {
         }
       },
       builder: (context, state) {
-        if (state is LogoutLoadingState || state is DeleteAccountLoadingState) {
+        if (state is LogoutLoadingState) {
           return const Center(
             child: CircularProgressIndicator(
               color: Colors.blue,
@@ -240,43 +220,6 @@ class _SettingViewBodyState extends State<SettingViewBody> {
                     ),
                   ),
                   const SizedBox(height: 10),
-                  FadeInLeft(
-                    duration: const Duration(milliseconds: 1100),
-                    child: Container(
-                      alignment: Alignment.center,
-                      height: 70,
-                      padding: const EdgeInsets.symmetric(horizontal: 8),
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(16),
-                        boxShadow: const [
-                          BoxShadow(
-                            color: Colors.black12,
-                            blurRadius: 8,
-                            offset: Offset(0, 4),
-                          ),
-                        ],
-                      ),
-                      child: ListTile(
-                        onTap: () async {
-                          await AuthCubit.get(context).deleteccount();
-                        },
-                        leading: const Icon(
-                          Icons.delete_forever,
-                          color: Colors.red,
-                          size: 30,
-                        ),
-                        title: const Text(
-                          'Delete Account',
-                          style: TextStyle(fontSize: 18, color: Colors.black87),
-                        ),
-                        trailing: const Icon(
-                          Icons.arrow_forward_ios,
-                          color: Colors.grey,
-                        ),
-                      ),
-                    ),
-                  ),
                 ],
               ),
             ),

@@ -4,14 +4,30 @@ import 'package:iti_flutter/features/Home%20feature/presentation/views/setting_v
 import 'package:iti_flutter/features/Home%20feature/presentation/views/shopping_view.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 
-class MainViewBody extends StatelessWidget {
+class MainViewBody extends StatefulWidget {
   const MainViewBody({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    PersistentTabController controller;
+  State<MainViewBody> createState() => _MainViewBodyState();
+}
 
+class _MainViewBodyState extends State<MainViewBody> {
+  late PersistentTabController controller;
+
+  @override
+  void initState() {
+    super.initState();
     controller = PersistentTabController(initialIndex: 0);
+  }
+
+  @override
+  void dispose() {
+    controller.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
     return PersistentTabView(
       context,
       controller: controller,
