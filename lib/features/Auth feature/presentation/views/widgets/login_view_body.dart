@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:iti_flutter/core/cache/cache_helper.dart';
 import 'package:iti_flutter/core/utils/functions/validation_email_method.dart';
 import 'package:iti_flutter/core/utils/functions/validation_password_method.dart';
 import 'package:iti_flutter/core/utils/helper/quick_alert.dart';
@@ -36,7 +37,8 @@ class _LoginViewBodyState extends State<LoginViewBody> {
             text: 'You have Login successfully.',
             type: QuickAlertType.success,
             confirmBtnText: 'Go to OTP',
-            onConfirm: () {
+            onConfirm: () async {
+              await CacheHelper().saveData(key: 'NewUser', value: true);
               Navigator.of(context).pushReplacement(
                 MaterialPageRoute(builder: (context) => OtpView()),
               );

@@ -1,5 +1,8 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
+import 'package:iti_flutter/core/cache/cache_helper.dart';
+import 'package:iti_flutter/features/Auth%20feature/presentation/manager/auth_cubit.dart';
+import 'package:iti_flutter/features/Auth%20feature/presentation/views/sign_up_view.dart';
 import 'package:iti_flutter/features/Home%20feature/presentation/manager/app_cubit.dart';
 
 class SettingViewBody extends StatefulWidget {
@@ -16,14 +19,14 @@ class _SettingViewBodyState extends State<SettingViewBody> {
   @override
   void initState() {
     var themee = AppCubit.get(context).getTheme();
-   
+
     // ignore: unrelated_type_equality_checks
     if (themee == ThemeMode.dark) {
       isDarkTheme = true;
     } else {
       isDarkTheme = false;
     }
-   
+
     super.initState();
   }
 
@@ -36,7 +39,7 @@ class _SettingViewBodyState extends State<SettingViewBody> {
           FadeInRight(
             duration: const Duration(milliseconds: 800),
             child: Container(
-              height: 500,
+              height: 435,
               width: 500,
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
@@ -54,8 +57,8 @@ class _SettingViewBodyState extends State<SettingViewBody> {
                 children: [
                   Image.asset(
                     'assets/images/my_image.jpg',
-                    width: 400,
-                    height: 350,
+                    width: 350,
+                    height: 320,
                     fit: BoxFit.cover,
                   ),
                   const SizedBox(height: 20),
@@ -82,7 +85,7 @@ class _SettingViewBodyState extends State<SettingViewBody> {
             ),
           ),
 
-          const SizedBox(height: 30),
+          const SizedBox(height: 10),
 
           FadeInLeft(
             duration: const Duration(milliseconds: 900),
@@ -126,6 +129,85 @@ class _SettingViewBodyState extends State<SettingViewBody> {
                     },
                   ),
                 ],
+              ),
+            ),
+          ),
+          const SizedBox(height: 10),
+          FadeInRight(
+            duration: const Duration(milliseconds: 1300),
+            child: Container(
+              alignment: Alignment.center,
+              height: 70,
+              padding: const EdgeInsets.symmetric(horizontal: 8),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(16),
+                boxShadow: const [
+                  BoxShadow(
+                    color: Colors.black12,
+                    blurRadius: 8,
+                    offset: Offset(0, 4),
+                  ),
+                ],
+              ),
+              child: ListTile(
+                onTap: () async {
+                  await CacheHelper().removeData(key: 'NewUser');
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) => SignUpView()),
+                  );
+                },
+                leading: const Icon(Icons.logout, color: Colors.red, size: 30),
+                title: const Text(
+                  'Logout',
+                  style: TextStyle(fontSize: 18, color: Colors.black87),
+                ),
+                trailing: const Icon(
+                  Icons.arrow_forward_ios,
+                  color: Colors.grey,
+                ),
+              ),
+            ),
+          ),
+          const SizedBox(height: 10),
+          FadeInLeft(
+            duration: const Duration(milliseconds: 1100),
+            child: Container(
+              alignment: Alignment.center,
+              height: 70,
+              padding: const EdgeInsets.symmetric(horizontal: 8),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(16),
+                boxShadow: const [
+                  BoxShadow(
+                    color: Colors.black12,
+                    blurRadius: 8,
+                    offset: Offset(0, 4),
+                  ),
+                ],
+              ),
+              child: ListTile(
+                onTap: () async {
+                  await CacheHelper().removeData(key: 'NewUser');
+                  await AuthCubit.get(context).deleteccount();
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) => SignUpView()),
+                  );
+                },
+                leading: const Icon(
+                  Icons.delete_forever,
+                  color: Colors.red,
+                  size: 30,
+                ),
+                title: const Text(
+                  'Delete Account',
+                  style: TextStyle(fontSize: 18, color: Colors.black87),
+                ),
+                trailing: const Icon(
+                  Icons.arrow_forward_ios,
+                  color: Colors.grey,
+                ),
               ),
             ),
           ),

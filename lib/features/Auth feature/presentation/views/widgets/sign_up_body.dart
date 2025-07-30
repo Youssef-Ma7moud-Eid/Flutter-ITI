@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:iti_flutter/core/cache/cache_helper.dart';
 import 'package:iti_flutter/core/utils/functions/validation_email_method.dart';
 import 'package:iti_flutter/core/utils/functions/validation_password_method.dart';
 import 'package:iti_flutter/core/utils/helper/quick_alert.dart';
@@ -34,7 +33,6 @@ class _SignUpBodyState extends State<SignUpBody> {
     return BlocListener<AuthCubit, AuthState>(
       listener: (context, state) {
         if (state is SuccessAuthState) {
-          CacheHelper().saveData(key: 'NewUser', value: true);
           showCustomAlert(
             context: context,
             title: 'Success!',

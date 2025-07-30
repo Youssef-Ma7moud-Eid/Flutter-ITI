@@ -1,4 +1,3 @@
-
 import 'package:shared_preferences/shared_preferences.dart';
 
 class CacheHelper {
@@ -7,7 +6,7 @@ class CacheHelper {
 
   factory CacheHelper() => _instance;
 
-  CacheHelper._internal(); 
+  CacheHelper._internal();
 
   // ───── Storage Instances ─────
   late SharedPreferences _sharedPreferences;

@@ -1,4 +1,3 @@
-
 class AuthRepo {
   Future<dynamic> createUserWithEmailAndPassword({
     required String email,
@@ -8,4 +7,5 @@ class AuthRepo {
     required String email,
     required String password,
   }) async {}
+  Future deleteUser() async {}
 }

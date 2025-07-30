@@ -36,4 +36,8 @@ class AuthCubit extends Cubit<AuthState> {
       emit(FailureAuthState(message: message));
     }
   }
+
+  Future<void> deleteccount() async {
+    await authRepo.deleteUser();
+  }
 }

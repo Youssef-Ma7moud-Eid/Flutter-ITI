@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:iti_flutter/features/Auth%20feature/data/repo/repo.dart';
 
 class AuthRepoImplement implements AuthRepo {
+  @override
   Future deleteUser() async {
     await FirebaseAuth.instance.currentUser!.delete();
   }
