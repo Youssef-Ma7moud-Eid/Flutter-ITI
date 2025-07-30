@@ -1,16 +1,14 @@
+import 'package:awesome_dialog/awesome_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:iti_flutter/core/cache/cache_helper.dart';
 import 'package:iti_flutter/core/utils/functions/validation_email_method.dart';
 import 'package:iti_flutter/core/utils/functions/validation_password_method.dart';
-import 'package:iti_flutter/core/utils/helper/quick_alert.dart';
 import 'package:iti_flutter/core/utils/helper/snack_bar.dart';
 import 'package:iti_flutter/core/widgets/button_widget.dart';
 import 'package:iti_flutter/features/Auth%20feature/presentation/manager/auth_cubit.dart';
 import 'package:iti_flutter/features/Auth%20feature/presentation/manager/auth_state.dart';
 import 'package:iti_flutter/features/Auth%20feature/presentation/views/otp_view.dart';
 import 'package:iti_flutter/features/Auth%20feature/presentation/views/widgets/text_form_field.dart';
-import 'package:quickalert/models/quickalert_type.dart';
 
 class LoginViewBody extends StatefulWidget {
   const LoginViewBody({super.key});
@@ -31,19 +29,19 @@ class _LoginViewBodyState extends State<LoginViewBody> {
     return BlocListener<AuthCubit, AuthState>(
       listener: (context, state) {
         if (state is SuccessAuthState) {
-          showCustomAlert(
+          AwesomeDialog(
             context: context,
-            title: 'Success!',
-            text: 'You have Login successfully.',
-            type: QuickAlertType.success,
-            confirmBtnText: 'Go to OTP',
-            onConfirm: () async {
-              await CacheHelper().saveData(key: 'NewUser', value: true);
+            dialogType: DialogType.success,
+            animType: AnimType.rightSlide,
+            title: 'Login Success',
+            desc: 'Go to OTP',
+
+            btnOkOnPress: () {
               Navigator.of(context).pushReplacement(
                 MaterialPageRoute(builder: (context) => OtpView()),
               );
             },
-          );
+          ).show();
         } else if (state is FailureAuthState) {
           scaffoldmessenger(
             color: Colors.red,

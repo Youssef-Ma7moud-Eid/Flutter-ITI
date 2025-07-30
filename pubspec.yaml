@@ -29,6 +29,7 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   animate_do: ^4.2.0
+  awesome_dialog: ^3.2.1
   cached_network_image: ^3.4.1
   cupertino_icons: ^1.0.8
   firebase_auth: ^6.0.0
@@ -41,7 +42,6 @@ dependencies:
   font_awesome_flutter: ^10.8.0
   google_fonts: ^6.2.1
   persistent_bottom_nav_bar: ^6.2.1
-  quickalert: ^1.1.0
   shared_preferences: ^2.5.3
 
 dev_dependencies:

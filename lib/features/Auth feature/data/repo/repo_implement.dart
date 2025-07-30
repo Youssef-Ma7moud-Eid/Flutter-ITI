@@ -3,8 +3,21 @@ import 'package:iti_flutter/features/Auth%20feature/data/repo/repo.dart';
 
 class AuthRepoImplement implements AuthRepo {
   @override
-  Future deleteUser() async {
-    await FirebaseAuth.instance.currentUser!.delete();
+  Future<bool> deleteUser() async {
+    try {
+      final user = FirebaseAuth.instance.currentUser;
+
+      if (user != null) {
+        await user.delete();
+        print('Account deleted successfully');
+      } else {
+        print('No user is currently signed in.');
+      }
+      return user!.delete() == true;
+    } catch (e) {
+      print('Error deleting account: $e');
+      return false;
+    }
   }
 
   @override
@@ -108,12 +121,15 @@ class AuthRepoImplement implements AuthRepo {
     return errormessage;
   }
 
-  bool isLoggedIn() {
-    return FirebaseAuth.instance.currentUser != null;
-  }
-
   @override
-  Future<void> logout() async {
-    await FirebaseAuth.instance.signOut();
+  Future<bool> logout() async {
+    try {
+      await FirebaseAuth.instance.signOut();
+      print('User signed out successfully');
+      return true;
+    } catch (e) {
+      print('Error signing out: $e');
+      return false;
+    }
   }
 }
