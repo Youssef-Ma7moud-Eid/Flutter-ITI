@@ -19,7 +19,7 @@ Welcome to the Flutter E-commerce App, a beautifully designed and fully function
 
 ## 🎬 Demo Video
 
-[![Watch Demo](https://img.shields.io/badge/Watch-Demo-red?logo=youtube&style=for-the-badge)](https://github.com/user-attachments/assets/395b84b7-6800-4749-9a17-76e6077917f7)
+[![Watch Demo](https://img.shields.io/badge/Watch-Demo-red?logo=youtube&style=for-the-badge)](https://github.com/user-attachments/assets/86725fa5-5cb2-4da2-8acd-92c9a230980e)
 
 ---
 
