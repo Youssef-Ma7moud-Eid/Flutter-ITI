@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:iti_flutter/features/Home%20feature/presentation/views/home_view.dart';
+import 'package:iti_flutter/features/Home%20feature/presentation/views/new_books_view.dart';
 import 'package:iti_flutter/features/Home%20feature/presentation/views/setting_view.dart';
 import 'package:iti_flutter/features/Home%20feature/presentation/views/shopping_view.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
@@ -49,7 +50,7 @@ class _MainViewBodyState extends State<MainViewBody> {
 }
 
 List<Widget> screens() {
-  return [HomeView(), ShoppingView(), SettingsView()];
+  return [HomeView(), ShoppingView(), NewBooksView(), SettingsView()];
 }
 
 List<PersistentBottomNavBarItem> items() {
@@ -67,6 +68,13 @@ List<PersistentBottomNavBarItem> items() {
       textStyle: TextStyle(fontWeight: FontWeight.w400),
       activeColorPrimary: CupertinoColors.activeBlue,
       inactiveColorPrimary: CupertinoColors.systemGrey,
+    ),
+     PersistentBottomNavBarItem(
+      icon: Icon(CupertinoIcons.book),
+      title: 'Books',
+      activeColorPrimary: CupertinoColors.activeBlue,
+      inactiveColorPrimary: CupertinoColors.systemGrey,
+      textStyle: TextStyle(fontWeight: FontWeight.w400),
     ),
     PersistentBottomNavBarItem(
       icon: Icon(CupertinoIcons.settings),
