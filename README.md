@@ -27,36 +27,36 @@ Welcome to the Flutter E-commerce App, a beautifully designed and fully function
 
 <table> 
   <tr> 
-    <td align="center"><strong>🧭 Splash</strong><br><img src="https://github.com/user-attachments/assets/ddb07c0f-e614-4010-9bf3-9ab03afd8aad" width="250"/></td> 
-    <td align="center"><strong>🚀 Onboarding</strong><br><img src="https://github.com/user-attachments/assets/8ff2ea37-0a61-41d4-b5f1-0605187ecd11" width="250"/></td> 
+    <td align="center"><strong>🧭 Splash</strong><br><img src="https://github.com/user-attachments/assets/e6a8f87f-b367-4ee3-b18c-4d4794248793" width="250"/></td> 
+    <td align="center"><strong>🚀 Onboarding</strong><br><img src="https://github.com/user-attachments/assets/f1c834cb-14c5-40f6-9343-7ad6a9f8248d" width="250"/></td> 
   </tr>
 </table>
 
 <table> 
   <tr> 
-    <td align="center"><strong>🔐 Login</strong><br><img src="https://github.com/user-attachments/assets/faaf7a09-3bf8-45f4-8e4b-106209b423c1" width="250"/></td> 
-    <td align="center"><strong>📝 Sign Up</strong><br><img src="https://github.com/user-attachments/assets/34f76d28-da3b-4600-bae5-1656acb70766" width="250"/></td> 
+    <td align="center"><strong>🔐 Login</strong><br><img src="https://github.com/user-attachments/assets/afff6774-2a6f-4393-97db-3b8ac958534f" width="250"/></td> 
+    <td align="center"><strong>📝 Sign Up</strong><br><img src="https://github.com/user-attachments/assets/430c151c-6759-427d-9b1a-ba1ba0e51fd7" width="250"/></td> 
   </tr>
 </table>
 
 <table> 
   <tr> 
-    <td align="center"><strong>🔢 OTP Verification</strong><br><img src="https://github.com/user-attachments/assets/17fd9084-2e42-4107-9557-2ed1ce54b909" width="250"/></td>
-    <td align="center"><strong>⚠️ Invalid Email</strong><br><img src="https://github.com/user-attachments/assets/83e42681-b14e-42a8-9866-52d9c50964ca" width="250"/></td>
+    <td align="center"><strong>🔢 OTP Verification</strong><br><img src="https://github.com/user-attachments/assets/25fecf25-975e-412a-b826-a34416325068" width="250"/></td>
+    <td align="center"><strong>⚠️ Invalid Email</strong><br><img src="https://github.com/user-attachments/assets/39be66b1-386d-4bfd-88f7-f347c94c7eeb" width="250"/></td>
   </tr>
   <tr>
-    <td align="center"><strong>❗ Passwords Don't Match</strong><br><img src="https://github.com/user-attachments/assets/d0ef9866-72f1-4097-b053-1c7723884086" width="250"/></td>
-    <td align="center"><strong>✅ Success Login</strong><br><img src="https://github.com/user-attachments/assets/ceeab5e6-ac66-4b01-8141-037abf3d62b3" width="250"/></td>
+    <td align="center"><strong>❗ Passwords Don't Match</strong><br><img src="https://github.com/user-attachments/assets/0755faef-ec17-4173-8ebb-eb43fd85b7f2" width="250"/></td>
+    <td align="center"><strong>✅ Success Auth</strong><br><img src="https://github.com/user-attachments/assets/4768ba27-cd2d-4f51-88ec-1848a5b4d48b" width="250"/></td>
   </tr>
 </table>
 
 <table>
   <tr>
-    <td align="center"><strong>🏠 Home Page</strong><br><img src="https://github.com/user-attachments/assets/f5dc3f42-4907-45e7-8146-7c53d9fbf5a4" width="250"/></td>
-    <td align="center"><strong>⚙️ Settings Page</strong><br><img src="https://github.com/user-attachments/assets/ae782157-967a-4f95-8d66-41b9427f1c68" width="250"/></td>
+    <td align="center"><strong>🏠 Home Page</strong><br><img src="https://github.com/user-attachments/assets/990b8d6b-bcb8-41f6-9f1b-039b8e03d9fa" width="250"/></td>
+    <td align="center"><strong>⚙️ Settings Page</strong><br><img src="https://github.com/user-attachments/assets/120abe33-98cc-4a17-ad22-a252fb042b43" width="250"/></td>
   </tr>
    <tr>
-    <td align="center"><strong>🛍️ Shopping Page</strong><br><img  src="https://github.com/user-attachments/assets/679b24fe-c42f-470e-ae3c-c9d970b727e0"  width="250"/></td>
+    <td align="center"><strong>🛍️ Shopping Page</strong><br><img  src="https://github.com/user-attachments/assets/e7c743ef-1a3e-4621-8fc3-f547d7f68bbd"  width="250"/></td>
   </tr>
 </table>
 
