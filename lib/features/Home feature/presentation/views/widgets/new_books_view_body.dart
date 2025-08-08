@@ -78,7 +78,8 @@ class NewestSellerFeatureItem extends StatelessWidget {
   final BookModel bookModel;
   @override
   Widget build(BuildContext context) {
-    return IntrinsicHeight(
+    return SizedBox(
+      height: 170,
       child: Row(
         children: [
           AspectRatio(

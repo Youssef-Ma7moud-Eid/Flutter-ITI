@@ -24,7 +24,9 @@ class App extends StatelessWidget {
         builder: (context, state) {
           return MaterialApp(
             theme: lightTheme,
-            darkTheme: dartMode,
+            darkTheme: darkTheme,
+            themeAnimationCurve: Curves.fastOutSlowIn,
+            themeAnimationDuration: const Duration(milliseconds: 1500),
             themeMode: AppCubit.get(context).getTheme(),
             debugShowCheckedModeBanner: false,
             home: CacheHelper().getData(key: 'NewUser') != null
